@@ -4,7 +4,7 @@
   "description": "This project will include anything cool I run in programming! it's just getting together all programming techniques in visual entity to enable the sharing or other resourceful initiatives in the futures",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server/server.js",
+    "start": "node server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Arsene INDAMUTSA",
