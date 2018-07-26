@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <title>Events in JavaScript</title>
+    <!--The title of the page on the website -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #h3style {
+            color: gray;
+        }
+    </style>
+</head>
+
+<!-- When we resize the page, the function changeImage will be called -->
+
+<body onResize="changeImage();" onLoad="alert('Website Loaded');">
+    <button class="w3-btn w3-orange w3-xlarge">Button
+        <i class="w3-margin-left fa fa-home"></i>
+    </button>
+
+    <div class="row">
+        <div class="col-md-1 col-md-offset-2 mt-3">
+            <a href="index.html" class="navbar-brand">
+                <img src='http://www.newthinktank.com/images/ThinkTankLogo.gif' id='logo' height='75' alt='Little Brain' />
+            </a>
+        </div>
+        <!-- <div class="w3-panel w3-card-4 w3-padding-16 col-md-10 col-md-offset-2 w3-animate-zoom mr-1">
+            <div class="container">
+
+                <nav class="nav nav-pills nav-justified flex-column flex-sm-row">
+                    <a class="nav-item nav-link" data-toggle="pill" href="#">Home</a>
+                    <a class="nav-item nav-link" data-toggle="pill" href="index.html">Mission</a>
+
+                    <div class="dropdown">
+
+                        <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" id="servicesDropdown" aria-haspopup="true" aria-expanded="false"
+                            href="#">Services</a>
+                        <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <a class="dropdown-item" href="#">Grooming</a>
+                            <a class="dropdown-item" href="#">General Health</a>
+                            <a class="dropdown-item" href="#">Nutrition</a>
+                            <a class="dropdown-item" href="#">Pest Control</a>
+                            <a class="dropdown-item" href="#">vaccination</a>
+                        </div>
+                    </div>
+
+                    <a class="nav-item nav-link" data-toggle="pill" href="#">Staff</a>
+                    <a class="nav-item nav-link" data-toggle="pill" href="#">Testimonials</a>
+                    <form class="form-inline">
+                        <input type="text" class="form-control ml-2" placeholder="Search">
+                        <button class="btn btn-outline text-white bg-primary" type="submit">Go</button>
+                    </form>
+                </nav>
+            </div>
+        </div> -->
+    </div>
+    <!-- <script src="js/event.js"></script> -->
+    <!-- Here we include the image -->
+    <img src="images/LittleBrain.png" id="littlebrain" onClick="alertme();" onDblClick="alert('You Double Clicked');" />
+
+    <!-- When you are hovering, you will be calling these functions -->
+    <h3 id="h3style" onMouseOver="changeColor();" onMouseOut="changeAgain();">Rollover</h3>
+
+    <p id="first">This is the first paragraph</p>
+    <p id="second">This is the second paragraph</p>
+    <p id="third">This is the third paragraph</p>
+
+    <!-- This is a simple form, where we will include text beside the checkbox, we can refer to it as formex -->
+    <form name="formex">
+        <input type="checkbox" name="firstpara" onClick="showPara();" />First Paragraph
+        <br />
+        <input type="checkbox" name="secondpara" onClick="showPara();" />Second Paragraph
+        <br />
+        <input type="checkbox" name="thirdpara" onClick="showPara();" />Third Paragraph
+        <br />
+        <p>
+            <b>Text Input</b>
+            <br />
+            <!-- <input type="text" name="textinput" onBlur="alert('onBlur Triggered');" onChange="alert('onChange Triggered');" onFocus="alert('onFocus Triggered');"
+            /> -->
+        </p>
+        <br />
+        <input type="text" name="mousex" />Mouse X Position
+        <br />
+        <input type="text" name="mousey" />Mouse Y Position
+        <br />
+        <input type="text" name="keypress" />Key Pressed
+        <br />
+        <input type="text" name="mousebutton" />Mouse Button Pressed
+        <br />
+    </form>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/event.js"></script>
+</body>
+
+</html>

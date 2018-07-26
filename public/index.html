@@ -6,12 +6,105 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <!-- <link rel="stylesheet" href="w3.css"> -->
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <title>Home | IndamutsaGroup</title>
+    <style>
+        #navbar-site {
+            font-family: Courier New;
+            font-size: 20px;
+        }
+    </style>
 </head>
 
 <body>
+
+    <div class="col-md-1 col-md-offset-2 mt-3">
+        <a href="eventJS.html" class="navbar-brand">
+            <img src='http://www.newthinktank.com/images/ThinkTankLogo.gif' id='logo' height='75' alt='Little Brain' />
+        </a>
+
+    </div>
+    <!-- <div class="w3-panel w3-card-4 w3-padding-16 col-md-10 col-md-offset-2 w3-animate-zoom mr-1 bg-dark">
+            <div class="container">
+
+                <nav class="nav nav-pills nav-justified flex-column flex-sm-row">
+                    <a class="nav-item nav-link text-white" href="#">Home</a>
+                    <a class="nav-item nav-link text-white" href="eventJS.html">Mission</a>
+
+                    <div class="dropdown">
+
+                        <a class="nav-item nav-link dropdown-toggle text-white" data-toggle="dropdown" id="servicesDropdown" aria-haspopup="true"
+                            aria-expanded="false" href="#">Services</a>
+                        <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <a class="dropdown-item" href="#">Grooming</a>
+                            <a class="dropdown-item" href="#">General Health</a>
+                            <a class="dropdown-item" href="#">Nutrition</a>
+                            <a class="dropdown-item" href="#">Pest Control</a>
+                            <a class="dropdown-item" href="#">vaccination</a>
+                        </div>
+                    </div>
+
+                    <a class="nav-item nav-link text-white" href="#">Staff</a>
+                    <a class="nav-item nav-link text-white" href="#">Testimonials</a>
+                    <form class="form-inline">
+                        <input type="text" class="form-control ml-2" placeholder="Search">
+                        <button class="btn btn-outline text-white bg-primary" type="submit">Go</button>
+                    </form>
+                </nav>
+            </div>
+        </div> -->
+
+    <nav id="navbar-site" class="nav bg-info navbar-expand-sm nav-justified sticky-top">
+        <div class="container">
+
+            <div class="navbar-nav">
+                <a class="nav-item nav-link text-white active" href="#mission">
+                    <i>
+                        <b>Home</b>
+                    </i>
+                </a>
+                <a class="nav-item nav-link text-white" href="#services">
+                    <i>
+                        <b>Mission</b>
+                    </i>
+                </a>
+                </a>
+                <a class="nav-item nav-link text-white" href="#staff">
+                    <i>
+                        <b>Services</b>
+                    </i>
+                </a>
+                </a>
+                <a class="nav-item nav-link text-white" href="#testimonials">
+                    <i>
+                        <b>Mission</b>
+                    </i>
+                </a>
+                </a>
+                <div class="dropdown">
+
+                    <a class="nav-item nav-link text-white dropdown-toggle" data-toggle="dropdown" id="servicesDropdown" aria-haspopup="true"
+                        aria-expanded="false" href="#">
+                        <i>
+                            <b>Projects</b>
+                        </i>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="servicesDropdown">
+                        <a class="dropdown-item" href="eventJS.html">Events in JavaScript</a>
+                        <a class="dropdown-item" href="#">General Health</a>
+                        <a class="dropdown-item" href="#">Nutrition</a>
+                        <a class="dropdown-item" href="#">Pest Control</a>
+                        <a class="dropdown-item" href="#">vaccination</a>
+                    </div>
+                </div>
+            </div>
+            <!-- navbar-nav -->
+        </div>
+        <!-- container -->
+    </nav>
+
     <!-- The Grid -->
     <div class="w3-row-padding" style="padding-top: 20px">
         <!-- Left Column -->
@@ -170,7 +263,7 @@
         </div>
         <!-- End Grid -->
     </div>
-    <footer class="w3-container w3-dark-grey w3-center w3-margin-top">
+    <footer class="w3-container bg-info w3-center w3-margin-top">
         <p>Find me on social media.</p>
         <a href="https://web.facebook.com/?_rdc=1&_rdr" class="fa fa-facebook-official w3-hover-opacity" style="font-size:24px;"></a>
         <i class="fa fa-instagram w3-hover-opacity" style="font-size:24px;"></i>
@@ -181,6 +274,10 @@
             <a href="https://www.w3schools.com/w3css/default.asp " target="_blank ">w3.css</a>
         </p>
     </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/event.js"></script>
 </body>
 
 </html>
